@@ -379,6 +379,16 @@
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>2.7</version>
             </plugin>
+            
+            <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-pmd-plugin</artifactId>
+	        <version>3.4</version>
+	        <configuration>
+	        	<minimumTokensize>25</minimumTokensize>
+	        </configuration>
+	        </plugin>
+            
         </plugins>
     </build>
 
@@ -452,6 +462,13 @@
                     </reportSet>
                 </reportSets>
             </plugin>
+	        
+	        
+	        <plugin>
+		        <groupId>org.codehaus.mojo</groupId>
+		        <artifactId>cobertura-maven-plugin</artifactId>
+		        <version>2.7</version>
+		    </plugin>
 	        
 	        <plugin>
 	        <groupId>org.apache.maven.plugins</groupId>
